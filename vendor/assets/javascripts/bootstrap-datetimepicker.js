@@ -854,7 +854,7 @@
                     return;
                 }
 
-                targetMoment = targetMoment.clone().locale(options.locale);
+                targetMoment = targetMoment.clone().updateLocale(options.locale);
 
                 if (hasTimeZone()) {
                     targetMoment.tz(options.timeZone);
